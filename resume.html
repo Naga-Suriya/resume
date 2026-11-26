@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Nagaraj R</title>
 <style>
-  @page { size: A4; margin: 26.3pt 0 30pt 0; }
+  @page { size: A4; margin: 24pt 0 20pt 0; }
   :root {
     --ink: #1c2b2b;
     --text: #3d4e4d;
@@ -20,7 +20,8 @@
     color: var(--text);
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
-  .page { width: 595.5pt; padding: 0 41.25pt; }
+  /* --z shrinks the whole layout uniformly so it fits on one A4 page */
+  .page { --z: 0.92; zoom: var(--z); width: calc(595.5pt / var(--z)); padding: 0 calc(41.25pt / var(--z)); }
 
   h1 { font-size: 20.4pt; line-height: 1.2; color: var(--ink); font-weight: 700; letter-spacing: -0.2pt; }
   .title { font-size: 10.32pt; line-height: 1.3; color: var(--accent); font-weight: 700; margin-top: 2.2pt; }
@@ -69,17 +70,17 @@
   <div class="contact">+91 9788980817<span class="sep">|</span>nagarajbca12@gmail.com<span class="sep">|</span>linkedin.com/in/nagaraj-angular<span class="sep">|</span>Theni, Tamil Nadu, India</div>
 
   <div class="section-h summary-h">Summary</div>
-  <p class="summary">Senior Frontend Engineer with 10+ years building production Angular and Ionic applications. Currently leads micro-frontend development for a corporate banking platform at Intellect Design Arena, having single-handedly delivered an Ionic v3<svg class="arr" viewBox="0 0 12 8" aria-label="to"><path d="M0.5 4H11M7.5 0.8L11 4L7.5 7.2" fill="none" stroke="currentColor" stroke-width="0.9"/></svg>v7 migration, a Cordova-to-Capacitor modernization, and onsite production deployments in Thailand. Earlier built ecommerce and food-ordering platforms plus reusable component libraries for fintech apps that cut development time by 40%, and led 30+ developers through an AI-assisted coding adoption. Brings 4 years of hands-on Java and Node.js backend experience, end-to-end cloud delivery on AWS with Docker, and Claude-powered AI automation. Targeting a Senior/Lead Frontend Engineer role in banking, fintech, or healthcare technology.</p>
+  <p class="summary">Senior Frontend Engineer with 10+ years building production Angular and Ionic applications. Currently leads micro-frontend development for a corporate banking platform at Intellect Design Arena, having single-handedly delivered an Ionic v3<svg class="arr" viewBox="0 0 12 8" aria-label="to"><path d="M0.5 4H11M7.5 0.8L11 4L7.5 7.2" fill="none" stroke="currentColor" stroke-width="0.9"/></svg>v7 migration, a Cordova-to-Capacitor modernization, and onsite production deployments in Thailand. Earlier built ecommerce and food-ordering platforms plus reusable component libraries for client apps that cut development time by 40%, and led 30+ developers through an AI-assisted coding adoption. Also brings 4 years of Java and Node.js, AWS/Docker, Jenkins CI/CD, and Claude AI automation. Targeting a Senior/Lead Frontend Engineer role in banking, fintech, or healthcare technology.</p>
 
   <div class="section-h skills-h">Skills</div>
   <dl class="skills">
     <dt>Frontend</dt><dd>AngularJS–Angular 17+, Ionic 3–7, Next.js, TypeScript, JavaScript, RxJS, Signals, SCSS/LESS, Bootstrap, Angular Material</dd>
     <dt>Architecture</dt><dd>Micro Frontends, Reusable Component Architecture, Reactive/Dynamic Forms, State Management, Enterprise Modernization</dd>
     <dt>Mobile</dt><dd>Capacitor, Cordova Migration, Google Play Store Publishing</dd>
-    <dt>Backend</dt><dd>Java (4 yrs), Node.js/Express (4 yrs), Python, Slim PHP, GraphQL, REST APIs, MongoDB, MySQL, SQL, Database Seeding</dd>
-    <dt>DevOps</dt><dd>Git, Jenkins, Docker (Image Creation), OpenShift, CI/CD, Nginx, AWS (EC2 Instance Management), Domain &amp; DNS Management</dd>
+    <dt>Backend</dt><dd>Java, Node.js/Express, Python, Slim PHP, GraphQL, REST APIs, MongoDB, MySQL, SQL</dd>
+    <dt>DevOps</dt><dd>Git, GitHub Repo Automation, Jenkins (Job Writing &amp; Admin), Docker Image Creation, AWS EC2, OpenShift, CI/CD, Nginx, Domain &amp; DNS</dd>
     <dt>AI &amp; Design</dt><dd>Python AI Automation with Claude, AI Skill Writing, Figma AI, Pencil.dev UX Design</dd>
-    <dt>Email Setup</dt><dd>Business Email Creation (Zoho, Microsoft 365, Google Workspace), Client-side Setup in Outlook &amp; Mobile Mail Apps</dd>
+    <dt>Email Setup</dt><dd>Business Email (Zoho, Microsoft 365, Google Workspace), Outlook &amp; Mobile Client Setup</dd>
     <dt>Practice</dt><dd>Agile &amp; Waterfall, AI-assisted Development, Mentoring, International Deployments</dd>
   </dl>
 
@@ -100,12 +101,12 @@
     <div class="job-head"><div class="company">Osiz Technologies <span class="loc">· Madurai, India</span></div><div class="dates">Nov 2019 – Mar 2023 · 3 yr 5 mo</div></div>
     <div class="role">Senior Programmer <svg class="arr" viewBox="0 0 12 8" aria-label="to"><path d="M0.5 4H11M7.5 0.8L11 4L7.5 7.2" fill="none" stroke="currentColor" stroke-width="0.9"/></svg> Project Manager (internal promotion)</div>
     <ul>
-      <li>Built a Flipkart-style ecommerce platform and a Swiggy-style food ordering/delivery app in Angular 11; developed reusable components and dynamic forms for fintech-style applications, reducing development time by 40%.</li>
+      <li>Built a Flipkart-style ecommerce platform and a Swiggy-style food ordering/delivery app in Angular 11; developed reusable components and dynamic forms for multiple client applications, reducing development time by 40%.</li>
       <li>Designed responsive, high-performance UIs across multiple concurrent client projects using Agile methodology.</li>
       <li>Promoted to Project Manager; led 30+ developers across Angular, Node.js, Ionic, and Java teams in adopting AI-assisted coding practices.</li>
-      <li>Owned a client product end-to-end: gathered requirements using Figma AI, designed the UX in Pencil.dev and secured client approval, then wrote Claude AI skills for each build action to drive development.</li>
-      <li>Built the Angular frontend and a Dockerized Java backend using those AI skills, created the database seeds, configured the domain, set up the AWS server, and successfully launched the product in the cloud.</li>
-      <li>Set up Zoho business email for the client with easy access in Outlook; in parallel built the companion mobile application and launched it on the Google Play Store.</li>
+      <li>Owned a client product end-to-end: gathered requirements with Figma AI, designed a client-approved UX in Pencil.dev, then wrote Claude AI skills for each action to build the Angular frontend, Dockerized Java backend, and database seeds.</li>
+      <li>Automated GitHub repository creation and wrote Jenkins jobs for build and deployment; configured the domain and AWS server and launched the product in the cloud.</li>
+      <li>Set up Zoho business email with Outlook access for the client and launched the companion mobile app on the Play Store.</li>
       <li>Received the Star Performer Award (Feb 2022) for outstanding contribution.</li>
     </ul>
   </div>
