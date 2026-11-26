@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nagaraj R</title>
+<style>
+  @page { size: A4; margin: 26.3pt 0 30pt 0; }
+  :root {
+    --ink: #1c2b2b;
+    --text: #3d4e4d;
+    --muted: #5b6b63;
+    --accent: #0e6f5c;
+    --sep: #aab5af;
+    --rule: #ddd8ca;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: Arial, "Liberation Sans", Helvetica, sans-serif;
+    color: var(--text);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page { width: 595.5pt; padding: 0 41.25pt; }
+
+  h1 { font-size: 20.4pt; line-height: 1.2; color: var(--ink); font-weight: 700; letter-spacing: -0.2pt; }
+  .title { font-size: 10.32pt; line-height: 1.3; color: var(--accent); font-weight: 700; margin-top: 2.2pt; }
+  .contact { font-size: 9.12pt; line-height: 1.3; color: var(--text); margin-top: 3.3pt; padding-bottom: 6.3pt; border-bottom: 1.5pt solid var(--ink); }
+  .contact .sep { color: var(--sep); margin: 0 4.5pt 0 4.5pt; }
+
+  .section-h { display: flex; align-items: center; gap: 9pt; font-size: 8.88pt; line-height: 1.2; font-weight: 700; color: var(--accent); letter-spacing: 1.3pt; text-transform: uppercase; }
+  .section-h::after { content: ""; flex: 1; height: 0.75pt; background: var(--rule); }
+
+  .summary-h { margin-top: 7.1pt; }
+  .summary { font-size: 10.32pt; line-height: 13.33pt; text-align: justify; margin-top: 11.8pt; }
+
+  .skills-h { margin-top: 10.6pt; }
+  .skills { display: grid; grid-template-columns: 84pt 1fr; column-gap: 0; row-gap: 2.8pt; margin-top: 4.3pt; padding-right: 12pt; align-items: baseline; }
+  .skills dt { font-size: 8.64pt; line-height: 12pt; font-weight: 700; color: var(--muted); letter-spacing: 0.5pt; text-transform: uppercase; }
+  .skills dd { font-size: 9.36pt; line-height: 12pt; }
+
+  .exp-h { margin-top: 6.2pt; }
+  .job { padding: 4.2pt 0 6.4pt; border-bottom: 0.75pt solid var(--rule); }
+  .job:last-child { border-bottom: 0; }
+  .job, .skills, .edu, li { break-inside: avoid; }
+  .section-h { break-after: avoid; }
+  .arr { display: inline-block; width: 0.95em; height: 0.62em; margin: 0 0.08em; vertical-align: 0.02em; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .company { font-size: 11.04pt; line-height: 14pt; font-weight: 700; color: var(--ink); }
+  .loc { font-size: 9.12pt; font-weight: 400; color: var(--text); }
+  .dates { font-size: 8.64pt; font-weight: 700; color: var(--muted); }
+  .role { font-size: 9.36pt; line-height: 12pt; font-style: italic; color: var(--muted); margin-top: 1.2pt; }
+  ul { list-style: none; margin-top: 3pt; }
+  li { position: relative; font-size: 9.36pt; line-height: 12pt; padding-left: 11.25pt; text-align: justify; }
+  li + li { margin-top: 1.5pt; }
+  li::before { content: ""; position: absolute; left: 0.75pt; top: 4.8pt; width: 3pt; height: 3pt; border-radius: 50%; background: var(--accent); }
+
+  .edu-h { margin-top: 8.7pt; }
+  .edu { display: grid; grid-template-columns: 84pt 1fr; row-gap: 1.5pt; align-items: baseline; margin-top: 4.8pt; }
+  .edu dt { font-size: 8.64pt; line-height: 12pt; font-weight: 700; color: var(--muted); }
+  .edu dd { font-size: 9.36pt; line-height: 12pt; }
+  .edu b { color: var(--ink); }
+  .edu .dot { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Nagaraj R</h1>
+  <div class="title">Senior Frontend Engineer · Angular / Ionic · Banking &amp; Fintech</div>
+  <div class="contact">+91 9788980817<span class="sep">|</span>nagarajbca12@gmail.com<span class="sep">|</span>linkedin.com/in/nagaraj-angular<span class="sep">|</span>Theni, Tamil Nadu, India</div>
+
+  <div class="section-h summary-h">Summary</div>
+  <p class="summary">Senior Frontend Engineer with 10+ years building production Angular and Ionic applications. Currently leads micro-frontend development for a corporate banking platform at Intellect Design Arena, having single-handedly delivered an Ionic v3<svg class="arr" viewBox="0 0 12 8" aria-label="to"><path d="M0.5 4H11M7.5 0.8L11 4L7.5 7.2" fill="none" stroke="currentColor" stroke-width="0.9"/></svg>v7 migration, a Cordova-to-Capacitor modernization, and onsite production deployments in Thailand. Earlier built ecommerce and food-ordering platforms plus reusable component libraries for fintech apps that cut development time by 40%, and led 30+ developers through an AI-assisted coding adoption. Brings 4 years of hands-on Java and Node.js backend experience, end-to-end cloud delivery on AWS with Docker, and Claude-powered AI automation. Targeting a Senior/Lead Frontend Engineer role in banking, fintech, or healthcare technology.</p>
+
+  <div class="section-h skills-h">Skills</div>
+  <dl class="skills">
+    <dt>Frontend</dt><dd>AngularJS–Angular 17+, Ionic 3–7, Next.js, TypeScript, JavaScript, RxJS, Signals, SCSS/LESS, Bootstrap, Angular Material</dd>
+    <dt>Architecture</dt><dd>Micro Frontends, Reusable Component Architecture, Reactive/Dynamic Forms, State Management, Enterprise Modernization</dd>
+    <dt>Mobile</dt><dd>Capacitor, Cordova Migration, Google Play Store Publishing</dd>
+    <dt>Backend</dt><dd>Java (4 yrs), Node.js/Express (4 yrs), Python, Slim PHP, GraphQL, REST APIs, MongoDB, MySQL, SQL, Database Seeding</dd>
+    <dt>DevOps</dt><dd>Git, Jenkins, Docker (Image Creation), OpenShift, CI/CD, Nginx, AWS (EC2 Instance Management), Domain &amp; DNS Management</dd>
+    <dt>AI &amp; Design</dt><dd>Python AI Automation with Claude, AI Skill Writing, Figma AI, Pencil.dev UX Design</dd>
+    <dt>Email Setup</dt><dd>Business Email Creation (Zoho, Microsoft 365, Google Workspace), Client-side Setup in Outlook &amp; Mobile Mail Apps</dd>
+    <dt>Practice</dt><dd>Agile &amp; Waterfall, AI-assisted Development, Mentoring, International Deployments</dd>
+  </dl>
+
+  <div class="section-h exp-h">Experience</div>
+
+  <div class="job">
+    <div class="job-head"><div class="company">Intellect Design Arena Ltd <span class="loc">· Chennai, India</span></div><div class="dates">Mar 2023 – Present · 3 yr 7 mo</div></div>
+    <div class="role">Senior Project Lead</div>
+    <ul>
+      <li>Lead frontend development of a corporate banking platform using Ionic micro-frontend architecture and Angular; single-handedly led the Ionic v3<svg class="arr" viewBox="0 0 12 8" aria-label="to"><path d="M0.5 4H11M7.5 0.8L11 4L7.5 7.2" fill="none" stroke="currentColor" stroke-width="0.9"/></svg>v7 migration and the Cordova-to-Capacitor modernization.</li>
+      <li>Managed onsite production deployments in Thailand for international banking clients; own frontend architecture decisions and mentor developers on Angular/Ionic best practices.</li>
+      <li>Collaborate with backend, QA, and product teams in Agile sprints to ship secure, compliant features under strict fintech regulatory constraints.</li>
+      <li>Received the OTIF (On-Time, In-Full) Excellence Award (Dec 2025) for the B&amp;F Payments squad delivery.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><div class="company">Osiz Technologies <span class="loc">· Madurai, India</span></div><div class="dates">Nov 2019 – Mar 2023 · 3 yr 5 mo</div></div>
+    <div class="role">Senior Programmer <svg class="arr" viewBox="0 0 12 8" aria-label="to"><path d="M0.5 4H11M7.5 0.8L11 4L7.5 7.2" fill="none" stroke="currentColor" stroke-width="0.9"/></svg> Project Manager (internal promotion)</div>
+    <ul>
+      <li>Built a Flipkart-style ecommerce platform and a Swiggy-style food ordering/delivery app in Angular 11; developed reusable components and dynamic forms for fintech-style applications, reducing development time by 40%.</li>
+      <li>Designed responsive, high-performance UIs across multiple concurrent client projects using Agile methodology.</li>
+      <li>Promoted to Project Manager; led 30+ developers across Angular, Node.js, Ionic, and Java teams in adopting AI-assisted coding practices.</li>
+      <li>Owned a client product end-to-end: gathered requirements using Figma AI, designed the UX in Pencil.dev and secured client approval, then wrote Claude AI skills for each build action to drive development.</li>
+      <li>Built the Angular frontend and a Dockerized Java backend using those AI skills, created the database seeds, configured the domain, set up the AWS server, and successfully launched the product in the cloud.</li>
+      <li>Set up Zoho business email for the client with easy access in Outlook; in parallel built the companion mobile application and launched it on the Google Play Store.</li>
+      <li>Received the Star Performer Award (Feb 2022) for outstanding contribution.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><div class="company">Xconcepts <span class="loc">· Chennai Area, India</span></div><div class="dates">Mar 2016 – Oct 2019 · 3 yr 8 mo</div></div>
+    <div class="role">Application Developer</div>
+    <ul>
+      <li>Single-handedly delivered full-stack applications — frontend, backend, REST APIs, and hosting — including invoice generation, enquiry management, job card management, and attendance management systems, using Angular/AngularJS, Ionic, and Slim PHP.</li>
+      <li>Gathered requirements directly from stakeholders and owned delivery end-to-end, building strong full-lifecycle ownership from the start of a career.</li>
+    </ul>
+  </div>
+
+  <div class="section-h edu-h">Education &amp; Languages</div>
+  <dl class="edu">
+    <dt>2014–2016</dt><dd><b>Loyola Institute of Technology, Chennai</b><span class="dot"> · </span>MCA · 73%</dd>
+    <dt>2011–2014</dt><dd><b>Theni Kamavar Sangam College of Arts &amp; Science, Theni</b><span class="dot"> · </span>BCA · 65%</dd>
+    <dt>Languages</dt><dd>Tamil, English, Telugu</dd>
+  </dl>
+</div>
+</body>
+</html>
